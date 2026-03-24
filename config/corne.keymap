@@ -27,8 +27,9 @@
         th: thumb_layer {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
+            flavor = "tap-preferred";   
+            tapping-term-ms = <250>;    
+            quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
 
@@ -171,6 +172,7 @@
             bindings = <
 &trans  &trans        &trans        &trans        &trans      &trans            &trans  &trans   &trans   &studio_unlock  &bootloader  &trans
 &trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5            &kp F6  &kp F7   &kp F8   &kp F9          &kp F10      &trans
+            
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &trans  &kp F11  &kp F12  &trans          &trans       &trans
                                     &kp ESC       &kp SPACE   &kp TAB           &trans  &trans   &trans
             >;
