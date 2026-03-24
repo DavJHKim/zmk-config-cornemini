@@ -27,8 +27,8 @@
         th: thumb_layer {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";   
-            tapping-term-ms = <250>;    
+            flavor = "tap-preferred";
+            tapping-term-ms = <250>;
             quick-tap-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
@@ -99,10 +99,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &kp Q       &kp W       &kp E         &kp R        &kp T        &kp Y        &kp U            &kp I         &kp O       &kp P          &trans
-&trans  &hm LGUI A  &hm LALT S  &hm LSHIFT D  &hm LCTRL F  &kp G        &kp H        &hm RCTRL J      &hm RSHIFT K  &hm RALT L  &hm RGUI SEMI  &trans
-&trans  &kp Z       &kp X       &kp C         &kp V        &kp B        &kp N        &kp M            &kp COMMA     &kp DOT     &kp FSLH       &trans
-                                &th MEDIA ESC  &th NAV SPACE  &th MOUSE TAB    &th SYM ENTER  &th NUM BACKSPACE  &th FUNC DELETE
+&trans  &kp Q       &kp W       &kp E          &kp R          &kp T            &kp Y          &kp U              &kp I            &kp O       &kp P          &trans
+&trans  &hm LGUI A  &hm LALT S  &hm LSHIFT D   &hm LCTRL F    &kp G            &kp H          &hm RCTRL J        &hm RSHIFT K     &hm RALT L  &hm RGUI SEMI  &trans
+&trans  &kp Z       &kp X       &kp C          &kp V          &kp B            &kp N          &kp M              &kp COMMA        &kp DOT     &kp FSLH       &trans
+                                &lt MEDIA ESC  &lt NAV SPACE  &lt MOUSE TAB    &lt SYM ENTER  &lt NUM BACKSPACE  &lt FUNC DELETE
             >;
         };
 
@@ -172,7 +172,6 @@
             bindings = <
 &trans  &trans        &trans        &trans        &trans      &trans            &trans  &trans   &trans   &studio_unlock  &bootloader  &trans
 &trans  &kp F1        &kp F2        &kp F3        &kp F4      &kp F5            &kp F6  &kp F7   &kp F8   &kp F9          &kp F10      &trans
-            
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bt BT_CLR_ALL    &trans  &kp F11  &kp F12  &trans          &trans       &trans
                                     &kp ESC       &kp SPACE   &kp TAB           &trans  &trans   &trans
             >;
